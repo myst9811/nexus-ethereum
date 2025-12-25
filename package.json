@@ -1,21 +1,29 @@
 {
   "name": "nexus-ethereum",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nexus Bridge - Ethereum smart contracts for Solana ↔ Ethereum cross-chain bridge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "deploy:localhost": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network mainnet",
+    "node": "hardhat node",
+    "verify": "hardhat verify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@openzeppelin/contracts": "^5.4.0",
     "@types/node": "^25.0.3",
     "dotenv": "^17.2.3",
     "ethers": "^6.16.0",
-    "hardhat": "^3.1.0",
+    "hardhat": "^2.22.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
