@@ -60,7 +60,7 @@ nexus-ethereum/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone github.com/myst9811/nexus-ethereum
 cd nexus-ethereum
 ```
 
@@ -210,9 +210,6 @@ This is part of the Nexus Bridge project. For the complete bridge system, see:
 
 ISC
 
-## Audit Status
-
-⚠️ These contracts have not been audited. Use at your own risk.
 
 ## Support
 
